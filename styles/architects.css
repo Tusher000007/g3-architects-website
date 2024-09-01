@@ -7,13 +7,10 @@
     width: 180px;
     height: 64px;
     border-radius: 8px;
-
     background: rgb(255, 144, 14);
     color: rgb(255, 255, 255);
-    
     font-size: 20px;
     font-weight: 600;
-    
     text-align: center;
     margin: 15px 0px;
     border: none;
@@ -39,7 +36,6 @@ nav {
 
 nav>ul {
     display: flex;
-
 }
 
 nav li {
@@ -65,19 +61,17 @@ nav li a {
 
     font-size: 64px;
     font-weight: 700;
-
 }
 
 .banner-description {
     font-size: 16px;
     font-weight: 400;
     color: #727272;
-
-
 }
 .banner img{
     width: 100%;
 }
+
 /* Header Styles Finished */
 /* Main Styles Started */
 
@@ -86,7 +80,6 @@ nav li a {
     margin: 20px 100px 20px 150px;
     display: flex;
     align-items: center;
-    
 }
 
 .teams-img-container{
@@ -96,7 +89,6 @@ nav li a {
 }
 .teams-content{
     padding-left: 50px;
-    
 }
 .teams-title{
     font-size: 45px;
@@ -108,7 +100,6 @@ nav li a {
 .of-our{
     font-weight: 700;
     color: #131313;
-    
 }
 .text-features{
     font-weight: 700;
@@ -124,7 +115,6 @@ nav li a {
 .facts-card-container{
     display: flex;
     justify-content: space-around;
-    
 }
 .facts-card-container .card{
     border: 1px solid rgb(255, 144, 14);
@@ -156,6 +146,56 @@ nav li a {
     margin:50px ;
     
 }
+/* Features Section Style */
+.features{
+    display: flex;
+    gap: 125px;
+    margin-top: 100px;
+}
+.features .feature-content{
+    margin-left: 130px;
+}
+.feature-content  .card{
+    padding-left: 20px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.features .section-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #131313;
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.card h4{
+    font-size: 20px;
+    font-weight: 600;
+    color: #131313;
+}
+
+.feature-image img{
+    height: 85%;
+}
+.experience{
+    border-radius: 8px;
+    background: rgb(255, 144, 14);
+    width: 342px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    top: -140px;
+    left: -80px;
+}
+.experience>h2{
+    font-size: 65px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.experience>p{
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 0;
+}
 /* Main Styles Finished */
 /* Footer Started */
 .ending{
@@ -184,12 +224,13 @@ nav li a {
 @media screen and (max-width: 576px) {
     /* Header Styles Started */
     header {
-        
         padding: 0px;
     }
-    nav {
+    nav {    
         flex-direction: column;
     }
+    /* Header Styles Finished */
+    /* Main Styles Started */
     .teams-container, .facts-card-container{
         flex-direction: column;
         margin: 10px 5px;
@@ -197,35 +238,56 @@ nav li a {
     .teams-img-container{
         
         grid-template-columns: 1fr;
-        
     }
     .facts-card-container .card{
         margin-top: 10px;
         margin-bottom: 10px;
-        
     }
     .sponsors-img-container{
         flex-direction: column;
         
         align-items: center;
         gap: 50px;
-       
     }
     .sponsors-img-container img{
       width: 200px;
-      
-     
     }
-    .ending{
+    
+    /* Features Section Style */
+    .features{
+        flex-direction: column;
         
+        margin-top: 15px;
+    }
+    .features .feature-content{
+        margin-left: 15px;
+    }
+    .feature-image img{
+        max-height: 50%;
+        max-width: 450px;
+    }
+    .experience{
+        position: static;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    .feature-image{
+        
+        text-align: center;
+    }
+
+
+
+
+     /* Main Styles Finished */
+    /* Footer Started */
+
+    .ending{
         margin: 50px 10px;
         padding: 10px 50px;
         font-size: 12px;
         color: #424242;
     }
-    
-    /* Header Styles Finished */
-    /* Main Styles Started */
 
     
 }
@@ -266,13 +328,35 @@ nav li a {
         
         align-items: center;
         gap: 50px;
-       
     }
     .sponsors-img-container img{
       width: 200px;
-      
-     
     }
+
+     /* Features Section Style */
+     .features{
+        flex-direction: column;
+        
+        margin-top: 15px;
+    }
+    .features .feature-content{
+        margin-left: 15px;
+    }
+    .feature-image img{
+        max-height: 50%;
+        max-width: 450px;
+    }
+    .feature-image{
+        
+        text-align: center;
+    }
+    
+
+    
+
+    /* Main Styles Finished */
+    /* Footer Started */
+    
     .ending{
         
         margin: 50px 10px;
